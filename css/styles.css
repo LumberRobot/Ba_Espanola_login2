@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* { /*styles all elements*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body { /*body has a minimum height of 100 vh and hides overflowing content on the x-axis*/
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+header { /*header is positioned at the top of the ancestor, width is 100% has a top padding of 30px and a right padding of 100px, flexbox will help in alignment, justified content justifies content while maintaining a space between elements, element is aligned in the center*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+
+header .logo { /*logo color, font weight, size, and letter spacing is set. All letters are in uppercase and no decorations*/
+	color: #004aad;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+header ul { /*displayed as flex, content are jsutified in center*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li { /*no bullets will appear, there is a left margin of 20px*/
+	list-style: none;
+	margin-left: 20px;
+}
+
+header ul li a { /*no text decoration, top padding of 6px and right padding of 15 px, colored #004aad, has a border radius of 20px*/
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #004aad;
+	border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active { /*when elements are hovered, bg will turn into blue and text color will be white within 0.5s.*/
+	background: #004aad;
+	color: #fff;
+	transition: 0.5s;
+}
+
+section { /*section has a relative position, a width of 100%, a height of 100vh, padding of 100px and a flex display, contents are justified and centered*/
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+section img { /*img has an absolute postition positioned at the top-left with a width and height of 100%, there are no pointer events and img is fit to cover*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+section img#crowd { /*changes which element is top of another element*/
+	z-index: 10;
+}
+#text { /*position of the element is absolute, color is #004aad, text does not wrap, font size 7.5vw, with a z-index of 9 and a top padding of 150px*/
+	position: absolute;
+	color: #004aad;
+	white-space: nowrap;
+	font-size: 7.5vw;
+	z-index: 9;
+	padding-top: 150px;
+}
+
+.sec { /* position is relatice with a padding of 100px*/
+	position: relative;
+	padding: 100px;
+}
+
+.sec h2 { /*font size of 3.5em with a bottom margin of 20px and a color of #004aad*/
+	font-size: 3.5em;
+	margin-bottom: 20px;
+	color: #004aad;
+}
+
+.sec p { /*p with a font size of 1 em and a color of #004aad*/
+
+	font-size: 1em;
+	color: #004aad;
+}
+
+.sec h3 { /*h3 has a font size of 3.5em with a bottom margin of 20px, a top margin of 50px and a color of #004aad*/
+	font-size: 3.5em;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	color: #004aad;
+}
+
+.sec li { /*li has a font size of 1em, a color of #004aad, and no text decorations*/
+	font-size: 1em;
+	color: #004aad;
+	text-decoration: none;
+}
+
+.sec ul li a { /*has no text decorations and shows a color of #004aad*/
+	text-decoration: none!important;
+	color: #004aad;
+}
+
+.facebook { /*image sprite's location is 0,0 with a width and height of 40px*/
+	background: url('../images/sprites.png') no-repeat 0 0;
+	width: 40px;
+	height: 40px;
+}
+
+.instagram { /*image sprite's location is -40px, 0 with a width and height of 40px*/
+	background: url('../images/sprites.png') no-repeat -40px 0;
+	width: 40px;
+	height: 40px;
+}
+
+.twitter { /*image sprite's location is -80px ,0 with a width and height of 40px*/
+	background: url('../images/sprites.png') no-repeat -80px 0;
+	width: 40px;
+	height: 40px;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover { /*when logos are hovered, opacity will change to 0.5*/
+	opacity: 0.5;
+}
+
+footer { /*footer has a border box sizing, has a background color of #004aad, has an automatic height with a width of 100vw, with Poppins set as the font with a white text color*/
+	box-sizing: border-box;
+	background: #004aad;
+	height: auto;
+	width: 100vw;
+	font-family: 'Poppins';
+	color: #fff;
+}
+
+.footer-content { /*footer content is displayed as flex, justified and aligned at the center with a flex direction of column*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h3 { /*h3 has a font size of 1.8rem ,a font weight of 400, all letters are capitalized, with a line height of 3rem and a top margin of 20px*/
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+	margin-top: 20px;
+}
+
+.footer-content p { /*p has a max width of 500px, margin of 10px that is automatic, line height of 28px, font size of 14px and an italic font*/
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.socials { /*socials have no list style with a display setting flex, jsutified and aligned at the center, with a top margin of 1 rem, right margin of 0, and bottom margin of 1 rem*/
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 1rem;
+}
+
+.socials li { /*li has a top margin of 0 and a right margin og 10px*/
+	margin: 0 10px;
+}
+
+.container { /*container has a width of 100%*/
+    width: 100%;
+}
+
+.buttons { /*buttons have a font size of 0, a bottom margin of 15px, and displayed as a block*/
+    font-size: 0;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.action-item { /*action item has a width of 100%, a height of 125px, a top margin of 1%, a right margin of 0, and a background of #004aad*/
+    width: 100%;
+    height: 125px;
+    margin: 1% 0;
+    background: #004aad;
+
+}
+
+.action-item h4 { /*h4 has a Poppins font with a size of 25px, a color of #fff which is aligned at the center with a top padding of 45px*/
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 45px;
+}
+
+a { /*a has no text decorations*/
+	text-decoration: none;
+}

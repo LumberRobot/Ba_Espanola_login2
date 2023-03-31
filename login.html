@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="style_login.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Eros</a>
+    </header>
+
+    <div class="container">
+        <div class="about">
+            <h2>About Eros</h2>
+			<p>Eros is a non-profit organization promoting honest sex education in the Philippines. As we approach the new generation, we have different ways to share our thoughts and opinions. This is why there is an issue with what people share on platforms. Eros tries to find ways to share honest sex educations on platforms that teenagers tend to use. We use social media to share stories and tips about sex education in an engaging way to younger generations.<br><br>Eros started as a high school project made for a Computer Science subject.<br><br></p>
+
+			<h2>Why support this advocacy?</h2>
+			<p>When sex education is well-rounded, the advantages go far beyond knowledge of sexually transmitted diseases and other health hazards.To prevent and counteract sexual abuse of children, sexual violence, and sexual exploitation, sexuality education is crucial (Strasbourg, 2020).<br><br>As they advance from childhood to adulthood, too many young people are given confused and contradictory information about relationships and sex. This has caused young people to want more trustworthy information that will help them live secure, fruitful, and meaningful lives. Children and young people may be more susceptible to risky sexual behaviors and sexual exploitation if they don't receive high-quality, developmentally and age-appropriate sexuality education (UNESCO, 2022).</p>
+        </div>
+        <div class="login">
+            <form class="form" onsubmit="validate();return false">
+                <div class="title">Login to</div>
+                <div class="logolog">Eros</div>
+                <div class="errormes"></div>
+                <div class="inputs">
+                    <label>Username: </label><input type="text" id="usern" maxlength="12" spellcheck="false" placeholder="required"><br>
+                    <div class="passwordwrap">
+                        <label>Password: </label><input type="password" id="userp" maxlength="12" spellcheck="false" placeholder="required">
+                        <button type="button" id="showpassw" onclick="showpassword()">show</button>
+                    </div>
+                    <p class="forgot"> 
+                        <a href="#">Forgot your password?</a>
+                    </p>
+                    <input type="submit" value="Login" class="loginbutton">
+                    <p class="register">
+                        <a href="#">No account? Create one now!</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Eros by Española</h3>
+            <p>Promoting honest sex education</p>
+            <p>https://sexederos.org/</p>
+            <p>Tugbok, Davao City | sexederos@gmail.com | 09123456789</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/mikkaella.espanola.3/" target="_blank"><div class="facebook"></div></a></li>
+                <li><a href="https://www.instagram.com/kikka_mikka/" target="_blank"><div class="instagram"></div></a></li>
+                <li><a href="https://twitter.com/aa_amesa" target="_blank"><div class="twitter"></div></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

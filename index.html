@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eros</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="logo">Eros</a>
+			<ul>
+				<li><a href="files/help.html">Help</a></li>
+				<li><a href="files/about.html">About</a></li>
+			</ul>
+		</header>
+		<section>
+			<img src="images/sexed.png" id="sexed">
+			<h2 id="text">Honest SexEd</h2> 
+			<img src="images/crowd.png" id="crowd">
+		</section>
+		<div class="sec">
+			<h2>About Honest Sex Education</h2>
+			<p>Sex education is a process of educating individuals about human sexuality, including issues related to sexual anatomy, sexual activity, contraception, and other aspects of reproductive health. It is often provided as part of a comprehensive education program in schools or through other educational or community-based organizations. The goal of sex education is to provide individuals with the knowledge, skills, and values to make informed and responsible decisions about their sexual health and well-being.<br><br>It is important for individuals to have accurate and complete information about sex and sexuality in order to make healthy and informed decisions about their sexual behavior and relationships.</p>
+
+			<h3>History</h3>
+			<p>Sex education has a long and varied history, with different approaches and methods being implemented in different parts of the world at different times.<br><br>In ancient civilizations, such as ancient Greece and Rome, sex education was often part of the education provided to young people as they prepared for adulthood. In some societies, such as those in ancient China and India, sex education was focused on teaching people about reproductive health and the importance of having children.<br><br>During the Middle Ages, sex education was not widely taught, and what little instruction there was often focused on the moral and religious aspects of sex rather than on health and reproduction.<br><br>In the modern era, sex education began to be more widely taught in schools in the 19th and 20th centuries. In the United States, the topic was first introduced into public schools in the 1920s, but it was not until the 1960s and 1970s that comprehensive sex education programs became more widespread.<br><br>Today, sex education is a mandatory part of the curriculum in many schools around the world, and it is designed to provide young people with accurate and comprehensive information about sexual health, relationships, and reproduction (Club, 2023).</p>
+		</div>
+
+		<script>
+			let sexed = document.getElementById('sexed');
+			let text = document.getElementById('text');
+			let crowd = document.getElementById('crowd');
+			let header = document.querySelector('header');
+
+			window.addEventListener('scroll', function(){
+				let value = window.scrollY;
+				sexed.style.top = value * 0.575 + 'px';
+				crowd.style.top = value * 0 + 'px';
+				text.style.marginRight = value * 4 + 'px';
+			})
+		</script>
+		<footer>
+			<div class="footer-content">
+				<h3>Eros by Española</h3>
+				<p>Promoting honest sex education</p>
+				<p>https://sexederos.org/</p>
+				<p>Tugbok, Davao City | sexederos@gmail.com | 09123456789</p>
+				<ul class="socials">
+					<li><a href="https://www.facebook.com/mikkaella.espanola.3/" target="_blank"><div class="facebook"></div></a></li>
+					<li><a href="https://www.instagram.com/kikka_mikka/" target="_blank"><div class="instagram"></div></a></li>
+					<li><a href="https://twitter.com/aa_amesa" target="_blank"><div class="twitter"></div></a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

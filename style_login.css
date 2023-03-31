@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* { /*styles all elements*/
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	color: #004aad;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.errormes {
+	height: 25px;
+}
+
+.logolog {
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-bottom: 30px;
+}
+
+.about {
+    float: left;
+    padding: 20px;
+    width: 700px;
+}
+
+.login {
+    background-color: #004aad;
+    border: solid 5px;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    margin-left: 50px;
+    width: 400px;
+    text-align: center;
+    margin-top: 100px;
+	outline: none;
+}
+
+.loginbutton {
+	margin-top: 40px;
+	padding: 5px;
+	font-size: 15px;
+	width: 100px;
+	color: #004aad;
+	margin-bottom: 40px;
+}
+
+input{
+	border: 0;
+    border-radius: 20px;
+	font-size: 20px;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: #004aad;
+	font-style: italic;
+	opacity: 50%;
+}
+
+label {
+	padding-right: 5px;
+}
+
+.forgot a, .forgot a:visited {
+	margin-left: 80px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.register a, .register a:visited {
+	margin-left: 170px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	font-style: italic;
+}
+
+#usern, #userp {
+	border: solid 2px white;
+	padding: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	color: #004aad;
+}
+
+#usern {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+#usern:hover, #userp:hover, #usern:focus, #userp:focus {
+	border:solid 2px #002350;
+	background-color: #a3afbe;
+}
+
+.passwordwrap {
+	position: relative;
+}
+
+#showpassw {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+	cursor: pointer;
+	width: 1.5rem;
+	display: flex;
+	align-items: center;
+	background: none;
+	border: none;	
+	padding-right: 78px;
+	font-size: 12px;
+	color: #004aad;
+}
+
+
+.container {
+    width: 1200px;
+    height: 550px;
+    margin: 30px auto;
+    margin-top: 90px;
+    display: flex;
+    color: #004aad;
+}
+
+.title {
+	font-size: 20px;
+	padding: 15px 0px 5px 0px;
+}
+
+.facebook { /*image sprite's location is 0,0 with a width and height of 40px*/
+	background: url('sprites.png') no-repeat 0 0;
+	width: 40px;
+	height: 40px;
+}
+
+.instagram { /*image sprite's location is -40px, 0 with a width and height of 40px*/
+	background: url('sprites.png') no-repeat -40px 0;
+	width: 40px;
+	height: 40px;
+}
+
+.twitter { /*image sprite's location is -80px ,0 with a width and height of 40px*/
+	background: url('sprites.png') no-repeat -80px 0;
+	width: 40px;
+	height: 40px;
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover { /*when logos are hovered, opacity will change to 0.5*/
+	opacity: 0.5;
+}
+
+footer { /*footer has a border box sizing, has a background color of #004aad, has an automatic height with a width of 100vw, with Poppins set as the font with a white text color*/
+	box-sizing: border-box;
+	background: #004aad;
+	height: auto;
+	width: 100vw;
+	font-family: 'Poppins';
+	color: #fff;
+    margin-top: 100px;
+}
+
+.footer-content { /*footer content is displayed as flex, justified and aligned at the center with a flex direction of column*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h3 { /*h3 has a font size of 1.8rem ,a font weight of 400, all letters are capitalized, with a line height of 3rem and a top margin of 20px*/
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+	margin-top: 20px;
+}
+
+.footer-content p { /*p has a max width of 500px, margin of 10px that is automatic, line height of 28px, font size of 14px and an italic font*/
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.socials { /*socials have no list style with a display setting flex, jsutified and aligned at the center, with a top margin of 1 rem, right margin of 0, and bottom margin of 1 rem*/
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 1rem;
+}
+
+.socials li { /*li has a top margin of 0 and a right margin og 10px*/
+	margin: 0 10px;
+}
